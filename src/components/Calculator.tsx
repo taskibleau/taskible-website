@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Calculator, TrendingDown } from 'lucide-react';
 import { useState } from 'react';
+import { trackCalculatorUsage, trackCalendlyClick } from '@/lib/gtag';
 
 export default function SavingsCalculator() {
   const [localSalary, setLocalSalary] = useState('80000');
@@ -14,11 +15,25 @@ export default function SavingsCalculator() {
   const handleSalaryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^0-9]/g, ''); // Only allow numbers
     setLocalSalary(value);
+
+    // Track calculator usage on first meaningful interaction
+    if (value.length >= 4) {
+      trackCalculatorUsage();
+    }
   };
 
   const handleHoursChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.replace(/[^0-9]/g, ''); // Only allow numbers
     setHoursPerWeek(value);
+
+    // Track calculator usage on meaningful interaction
+    if (value.length >= 1) {
+      trackCalculatorUsage();
+    }
+  };
+
+  const handleCalendlyClick = () => {
+    trackCalendlyClick();
   };
 
   const salaryNumber = parseInt(localSalary) || 0;
@@ -256,6 +271,7 @@ export default function SavingsCalculator() {
             href="https://calendly.com/team-taskible/15min"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleCalendlyClick}
             className="bg-emerald-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-colors inline-flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

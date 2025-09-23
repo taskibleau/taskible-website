@@ -2,8 +2,16 @@
 
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Calendar } from 'lucide-react';
+import { trackCalendlyClick, trackEmailClick } from '@/lib/gtag';
 
 export default function Contact() {
+  const handleCalendlyClick = () => {
+    trackCalendlyClick();
+  };
+
+  const handleEmailClick = () => {
+    trackEmailClick();
+  };
 
 
 
@@ -65,6 +73,7 @@ export default function Contact() {
               href="https://calendly.com/team-taskible/15min"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleCalendlyClick}
               className="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-emerald-700 hover:to-emerald-600 transition-all duration-200 flex items-center justify-center premium-shadow"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -111,7 +120,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">team@taskible.com.au</p>
+                  <a href="mailto:team@taskible.com.au" onClick={handleEmailClick} className="text-gray-600 hover:text-blue-600 transition-colors">team@taskible.com.au</a>
                   <p className="text-sm text-gray-500">We respond within 4 hours</p>
                 </div>
               </div>
@@ -127,6 +136,7 @@ export default function Contact() {
                     href="https://calendly.com/team-taskible/15min"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={handleCalendlyClick}
                     className="text-blue-600 hover:text-blue-700 font-medium text-sm mt-1 inline-block"
                   >
                     📅 Book Free Consultation →

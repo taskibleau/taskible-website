@@ -7,9 +7,18 @@ import SavingsCalculator from '@/components/Calculator';
 import Testimonials from '@/components/Testimonials';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
+import { trackCalendlyClick, trackEmailClick } from '@/lib/gtag';
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleCalendlyClick = () => {
+    trackCalendlyClick();
+  };
+
+  const handleEmailClick = () => {
+    trackEmailClick();
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50">
@@ -93,6 +102,7 @@ export default function Home() {
                   href="https://calendly.com/team-taskible/15min"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handleCalendlyClick}
                   className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-emerald-700 hover:to-emerald-600 transition-all duration-200 flex items-center justify-center shadow-lg premium-shadow"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -323,6 +333,7 @@ export default function Home() {
                 href="https://calendly.com/team-taskible/15min"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleCalendlyClick}
                 className="bg-white text-emerald-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-all duration-200 premium-shadow flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -389,13 +400,14 @@ export default function Home() {
               <h4 className="text-lg font-semibold mb-6 text-blue-400">Get Started</h4>
               <div className="space-y-4">
                 <p className="text-gray-300">
-                  <strong>Email:</strong> team@taskible.com.au<br />
+                  <strong>Email:</strong> <a href="mailto:team@taskible.com.au" onClick={handleEmailClick} className="hover:text-emerald-400 transition-colors">team@taskible.com.au</a><br />
                   <strong>Location:</strong> Brisbane, Queensland Australia
                 </p>
                 <motion.a
                   href="https://calendly.com/team-taskible/15min"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handleCalendlyClick}
                   className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-emerald-700 hover:to-emerald-600 transition-all duration-200 w-full block text-center"
                   whileHover={{ scale: 1.05 }}
                 >
