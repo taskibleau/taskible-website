@@ -387,7 +387,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold mb-6 text-emerald-400">Why Choose Taskable</h4>
+              <h4 className="text-lg font-semibold mb-6 text-emerald-400">Why Choose Taskible</h4>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-center"><CheckCircle className="w-4 h-4 text-emerald-400 mr-2" />$19/hour transparent pricing</li>
                 <li className="flex items-center"><CheckCircle className="w-4 h-4 text-emerald-400 mr-2" />Australian-trained professionals</li>
@@ -423,8 +423,8 @@ export default function Home() {
                 &copy; 2024 Taskible Pty Ltd. All rights reserved. | ABN: 42 156 942 886
               </p>
               <div className="flex space-x-6 text-gray-400 text-sm">
-                <a href="#" className="hover:text-emerald-400 transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-emerald-400 transition-colors">Terms of Service</a>
+                <a href="/privacy-policy" className="hover:text-emerald-400 transition-colors">Privacy Policy</a>
+                <a href="/terms-and-conditions" className="hover:text-emerald-400 transition-colors">Terms & Conditions</a>
                 <a href="#" className="hover:text-emerald-400 transition-colors">Security</a>
               </div>
             </div>
