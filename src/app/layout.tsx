@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://taskible.com.au'),
   title: "Taskible - Save 60% on Bookkeeping Costs with Overseas Professionals",
   description: "Connect with skilled overseas bookkeeping professionals and cut your costs by 60%. Trusted by 847+ Australian businesses. Get your free consultation today.",
   keywords: ["bookkeeping", "overseas professionals", "cost savings", "Australian business", "accounting", "financial services"],
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Taskable - Overseas Bookkeeping Professionals",
+        alt: "Taskible - Overseas Bookkeeping Professionals",
       },
     ],
     locale: "en_AU",
