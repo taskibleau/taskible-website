@@ -512,10 +512,10 @@ export default function Home() {
               className="bg-white rounded-lg shadow-sm p-6 border border-gray-200"
             >
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                What if the bookkeeper doesn't work out?
+                What if the bookkeeper doesn&apos;t work out?
               </h3>
               <p className="text-gray-600">
-                We offer a 90-day money-back guarantee. If you're not completely satisfied, we'll provide a full refund of Taskible fees and help you find a replacement at no extra cost. No questions asked.
+                We offer a 90-day money-back guarantee. If you&apos;re not completely satisfied, we&apos;ll provide a full refund of Taskible fees and help you find a replacement at no extra cost. No questions asked.
               </p>
             </motion.div>
 
@@ -571,7 +571,7 @@ export default function Home() {
                 What tasks can they handle?
               </h3>
               <p className="text-gray-600">
-                Everything from data entry and reconciliations to financial reporting and GST returns. They can't provide tax advice or sign off on compliance, but handle 80%+ of your routine bookkeeping work.
+                Everything from data entry and reconciliations to financial reporting and GST returns. They can&apos;t provide tax advice or sign off on compliance, but handle 80%+ of your routine bookkeeping work.
               </p>
             </motion.div>
 
@@ -585,7 +585,7 @@ export default function Home() {
                 What makes Taskible different from other offshore services?
               </h3>
               <p className="text-gray-600">
-                Complete transparency. We show you exactly what you'll save, who you'll work with, and guarantee results. No hidden fees, no long contracts, and personal support throughout the relationship.
+                Complete transparency. We show you exactly what you&apos;ll save, who you&apos;ll work with, and guarantee results. No hidden fees, no long contracts, and personal support throughout the relationship.
               </p>
             </motion.div>
           </div>
