@@ -289,6 +289,122 @@ export default function Home() {
       {/* About Section */}
       <About />
 
+      {/* How It Works Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Enterprise-Grade Process
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our systematic approach ensures seamless integration with your existing operations.
+              <strong className="text-emerald-600"> 94.3% enterprise client success rate.</strong>
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-center"
+            >
+              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                1
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Setup & Integration</h3>
+              <p className="text-gray-600 text-sm">
+                24-48 hour professional onboarding. Dedicated success manager configures Monday.com workspace, integrates with your accounting software, and establishes secure access protocols.
+              </p>
+              <div className="mt-3 text-xs text-blue-600 font-semibold">⏱ 24-48 hours</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-center"
+            >
+              <div className="bg-emerald-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                2
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Quality Framework</h3>
+              <p className="text-gray-600 text-sm">
+                Built-in quality controls with approval workflows. Nothing goes live without your review. Automated task tracking, time logging, and progress dashboards give you complete visibility.
+              </p>
+              <div className="mt-3 text-xs text-emerald-600 font-semibold">✓ 100% Approval Required</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-center"
+            >
+              <div className="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                3
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Weekly Automation</h3>
+              <p className="text-gray-600 text-sm">
+                Minimal management required. Automated Monday progress updates and Slack notifications for urgent items. Deliverables sent directly to your accounting software. Your involvement: 15 minutes/week maximum.
+              </p>
+              <div className="mt-3 text-xs text-purple-600 font-semibold">⚡ 15 min/week max</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-center"
+            >
+              <div className="bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                4
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Monthly Billing</h3>
+              <p className="text-gray-600 text-sm">
+                Simple monthly invoice with detailed hours breakdown. All work logged and verified before billing. Clear, transparent pricing with no surprises.
+              </p>
+              <div className="mt-3 text-xs text-gray-800 font-semibold">💰 Transparent Billing</div>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="bg-gray-50 rounded-xl p-8 text-center"
+          >
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Enterprise Tech Stack Included</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600">
+              <div>
+                <div className="font-semibold text-gray-900">Monday.com Pro</div>
+                <div>Project Management</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-900">Slack Business</div>
+                <div>Private Channels</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-900">Direct Integration</div>
+                <div>Live Updates</div>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-900">Secure Integrations</div>
+                <div>Xero, MYOB, QuickBooks</div>
+              </div>
+            </div>
+            <p className="text-xs text-gray-500 mt-4">
+              $35+/month value included at no extra cost • Enterprise-grade security • Australian data compliance
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <Contact />
 
@@ -353,6 +469,145 @@ export default function Home() {
             <div className="mt-6 text-emerald-100 text-sm">
               ⚡ Free consultation • 90-day guarantee • No credit card required
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Everything you need to know about working with overseas bookkeeping professionals
+            </p>
+          </motion.div>
+
+          <div className="space-y-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-white rounded-lg shadow-sm p-6 border border-gray-200"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                How quickly can I start working with a bookkeeper?
+              </h3>
+              <p className="text-gray-600">
+                Most clients start within 24-48 hours. After your free 15-minute consultation, we match you with a qualified professional and arrange an introduction call. You can begin delegating tasks immediately.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-white rounded-lg shadow-sm p-6 border border-gray-200"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What if the bookkeeper doesn't work out?
+              </h3>
+              <p className="text-gray-600">
+                We offer a 90-day money-back guarantee. If you're not completely satisfied, we'll provide a full refund of Taskible fees and help you find a replacement at no extra cost. No questions asked.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-white rounded-lg shadow-sm p-6 border border-gray-200"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Do I need to provide training or manage them daily?
+              </h3>
+              <p className="text-gray-600">
+                No intensive training required. Our professionals are university-qualified CPAs with Australian accounting experience. You set expectations once, provide access to your systems, and they work independently with weekly check-ins.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="bg-white rounded-lg shadow-sm p-6 border border-gray-200"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                How do payments work? Are there setup fees?
+              </h3>
+              <p className="text-gray-600">
+                Zero setup fees, no contracts, no minimums. We invoice you monthly for hours worked by your bookkeeper at $19/hour. All hours are logged by the professional and verified by you before billing.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="bg-white rounded-lg shadow-sm p-6 border border-gray-200"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Is my financial data secure with overseas professionals?
+              </h3>
+              <p className="text-gray-600">
+                Absolutely. All professionals sign comprehensive NDAs and work through secure, encrypted platforms. They have experience with major Australian accounting software like Xero, MYOB, and QuickBooks with proper access controls.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="bg-white rounded-lg shadow-sm p-6 border border-gray-200"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What tasks can they handle?
+              </h3>
+              <p className="text-gray-600">
+                Everything from data entry and reconciliations to financial reporting and GST returns. They can't provide tax advice or sign off on compliance, but handle 80%+ of your routine bookkeeping work.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="bg-white rounded-lg shadow-sm p-6 border border-gray-200"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What makes Taskible different from other offshore services?
+              </h3>
+              <p className="text-gray-600">
+                Complete transparency. We show you exactly what you'll save, who you'll work with, and guarantee results. No hidden fees, no long contracts, and personal support throughout the relationship.
+              </p>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-center mt-12"
+          >
+            <p className="text-gray-600 mb-6">Still have questions?</p>
+            <motion.a
+              href="https://calendly.com/team-taskible/15min"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleCalendlyClick}
+              className="bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-emerald-700 hover:to-emerald-600 transition-all duration-200 inline-block"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get Your Questions Answered - Free Call
+            </motion.a>
           </motion.div>
         </div>
       </section>
